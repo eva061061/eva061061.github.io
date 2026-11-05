@@ -11,3 +11,7 @@ Hi, I’m Eva. I’m currently a Master’s student in Biostatistics at Columbia
 I have a background in mathematical economics and finance, and I’m interested in statistical modeling, data analysis, and applying quantitative methods to real-world problems.
 
 Feel free to check out my [Resume](resume.html) or reach out via email.
+
+## My Projects
+
+- [NYC Restaurant Inspections Dashboard](dashboard.html)

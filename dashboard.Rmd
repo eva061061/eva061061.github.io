@@ -31,7 +31,12 @@ inspections = rest_inspec |>
   ) |>
   slice_sample(n = 15000)   
 ```
-# Boxplot
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Inspection Scores by Borough
+
 ```{r}
 p1 =
   plot_ly(
@@ -46,6 +51,10 @@ p1 =
 p1
 ```
 
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Number of Inspections by Grade
 
 ```{r}
 
@@ -71,4 +80,26 @@ p2 =
 p2
 ```
 
+### Critical vs. Non-critical Violations
+
+```{r}
+
+
+p3 =
+  inspections |>
+  filter(!is.na(critical_flag)) |>
+  count(critical_flag) |>
+  plot_ly(
+    labels = ~critical_flag,
+    values = ~n,
+    type = "pie",
+    textinfo = "label+percent",
+    hole = 0.3
+  ) |>
+  layout(
+    title = "Proportion of Critical Violations"
+  )
+
+p3
+```
 
