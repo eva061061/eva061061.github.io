@@ -2,25 +2,70 @@
 title: "Resume"
 ---
 
-# Zhuoxuan Li 
+# Zhuoxuan Li (Eva)
 
-Master of Science in Biostatistics 
+**Master of Science in Biostatistics**  
 Columbia University Mailman School of Public Health  
+New York, NY  
 
-Email: zl3804@cumc.columbia.edu  
+Email: [zl3804@cumc.columbia.edu](mailto:zl3804@cumc.columbia.edu)  
+Phone: +1 (212) 603-9691  
 GitHub: [eva061061](https://github.com/eva061061)
-
---- debounced
-
-## Education
-
-Columbia University, New York, NY  
-MS in Biostatistics (Public Health Data Science track)  
-Expected Graduation: 2028
-
-Central University of Finance and Economics, Beijing, China  
-Bachelor of Economics  
-Graduation: 2026
 
 ---
 
+### Education
+
+**Columbia University**, New York, NY  
+M.S. in Biostatistics (Public Health Data Science track)  
+Expected May 2028  
+
+**Central University of Finance and Economics**, Beijing, China  
+B.A. in Mathematical Economics and Mathematical Finance  
+June 2026 | GPA: 94.06/100 (Top 3%)  
+
+---
+
+### Research Experience
+
+**Neural Network–based Nonlinear Functional PCA**  
+*Under guidance of Prof. Chunming Zhang, University of Wisconsin* | Apr 2025 – Oct 2025  
+- Reimplemented Nonlinear Functional PCA from R into MATLAB  
+- Resolved complex tensor dimension mismatches and restored model performance close to published benchmarks  
+
+**Gold-Silver Ratio Long-term Equilibrium & Structural Break Detection**  
+*Independent Research* | Jul 2024 – Present  
+- Built a 4,000-year gold-silver price database from multi-source historical records  
+- Applied SVAR analysis to identify structural breaks and quantify long-term drivers  
+
+**Impact of Green Trade Barriers on China’s Agricultural Exports**  
+*Independent Research* | Jun 2025  
+- Used two-way fixed effects model with instrumental variables  
+- Conducted heterogeneity analysis and robustness checks  
+
+---
+
+### Internship Experience
+
+**KPMG Advisory (China)** — Technology & Data Consulting Intern  
+Beijing | Jul 2025 – Sep 2025  
+- Participated in data governance project for China Re Life Reinsurance  
+- Inventoried nearly 20,000 structured data fields and developed data value rating standards  
+
+**Sina Weibo** — Business Analysis Intern  
+Beijing | Sep 2025 – Oct 2025  
+- Built medical keyword libraries and automated data cleaning pipelines  
+- Supported brand study by analyzing multi-layer user data and engagement metrics  
+
+**Zhongtai Securities** — Industry Research Intern (Electrical & New Energy)  
+Shanghai | Jan 2025 – Apr 2025  
+- Conducted market research on LED driver chips and automotive SBC chips  
+- Analyzed company financials and competitive landscape using Wind and Tonghuashun  
+
+---
+
+### Skills
+
+**Technical:** R, Python, MATLAB, SQL, SPSS, LaTeX  
+**Statistical & Analytical:** Data cleaning, statistical modeling, data visualization, causal inference  
+**Language:** English (IELTS 7.5, GRE 329), Mandarin (Native)
