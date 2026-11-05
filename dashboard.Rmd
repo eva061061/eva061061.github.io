@@ -5,3 +5,25 @@ output:
     orientation: columns
     vertical_layout: fill
 ---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(plotly)
+library(p8105.datasets)
+
+data("rest_inspec")
+
+inspections = rest_inspec |>
+  filter(
+    !is.na(score),
+    score >= 0,
+    score <= 100,
+    !is.na(boro),
+    boro != "Missing"
+  ) |>
+  mutate(
+    boro = factor(boro),
+    grade = factor(grade, levels = c("A", "B", "C", "P", "Z", "Not Yet Graded"))
+  ) |>
+  slice_sample(n = 15000)   
