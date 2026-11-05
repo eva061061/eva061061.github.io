@@ -24,6 +24,51 @@ inspections = rest_inspec |>
   ) |>
   mutate(
     boro = factor(boro),
-    grade = factor(grade, levels = c("A", "B", "C", "P", "Z", "Not Yet Graded"))
+    grade = factor(
+  grade,
+  levels = c("A", "B", "C", "P", "Z", "N", "G")
+)
   ) |>
   slice_sample(n = 15000)   
+```
+# Boxplot
+```{r}
+p1 =
+  plot_ly(
+    data = inspections,
+    x = ~boro,
+    y = ~score,
+    color = ~boro,
+    type = "box",
+    colors = "viridis"
+  )
+
+p1
+```
+
+
+```{r}
+
+
+p2 =
+  inspections |>
+  filter(!is.na(grade)) |>
+  count(grade) |>
+  plot_ly(
+    x = ~grade,
+    y = ~n,
+    type = "bar",
+    marker = list(
+      color = "steelblue"
+    )
+  ) |>
+  layout(
+    title = "Number of Inspections by Grade",
+    xaxis = list(title = "Inspection Grade"),
+    yaxis = list(title = "Number of Inspections")
+  )
+
+p2
+```
+
+
