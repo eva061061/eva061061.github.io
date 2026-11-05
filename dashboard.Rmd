@@ -14,13 +14,15 @@ library(p8105.datasets)
 
 data("rest_inspec")
 
+set.seed(8130)
+
 inspections = rest_inspec |>
   filter(
     !is.na(score),
     score >= 0,
     score <= 100,
     !is.na(boro),
-    boro != "Missing"
+    !boro %in% c("Missing", "0")
   ) |>
   mutate(
     boro = factor(boro),
@@ -46,9 +48,16 @@ p1 =
     color = ~boro,
     type = "box",
     colors = "viridis"
+  ) |>
+  layout(
+    title = "Distribution of Inspection Scores Across NYC Boroughs",
+    xaxis = list(title = "Borough"),
+    yaxis = list(title = "Inspection Score (higher = worse)"),
+    showlegend = FALSE
   )
 
 p1
+
 ```
 
 Column {data-width=350}
@@ -97,7 +106,7 @@ p3 =
     hole = 0.3
   ) |>
   layout(
-    title = "Proportion of Critical Violations"
+    title = "Proportion of Critical Flagged Inspection Records"
   )
 
 p3
